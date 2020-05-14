@@ -1,6 +1,7 @@
 import { serve } from 'https://raw.githubusercontent.com/denoland/deno/master/std/http/server.ts';
+import { print } from '../console/index.ts';
 
-console.log('http://localhost:9000/');
+print('http://localhost:9000/');
 
 const s = serve({ port: 9000 });
 

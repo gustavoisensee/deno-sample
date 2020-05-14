@@ -1,7 +1,11 @@
-const listener = Deno.listen({ port: 8080 });
+import { serve } from 'https://raw.githubusercontent.com/denoland/deno/master/std/http/server.ts';
 
-console.log("listening on 0.0.0.0:8080");
+console.log('http://localhost:9000/');
 
-for await (const conn of listener) {
-  Deno.copy(conn, conn);
+const s = serve({ port: 9000 });
+
+for await (const req of s) {
+  req.respond({
+    body: 'Hello world!'
+  });
 }

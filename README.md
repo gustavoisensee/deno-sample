@@ -16,4 +16,4 @@ make run-react
 make run-server
 ```
 
-You'll see the link to access your HTTP server: http://localhost:9000.
+You'll see the link to access the app: http://localhost:9000.

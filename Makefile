@@ -1,8 +1,9 @@
 run-preact:
-	deno run --allow-net preact/index.jsx
+	deno run --allow-read --allow-net preact/index.jsx
 
 run-react:
-	deno run --allow-net react/index.jsx
+	deno bundle react/client.jsx react/build/bundle.js
+	deno run --allow-read --allow-net --unstable react/server.jsx
 
 run-server:
 	deno run --allow-read --allow-net server/index.js

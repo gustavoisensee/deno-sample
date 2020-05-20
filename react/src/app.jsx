@@ -1,4 +1,5 @@
-import { React } from '../deps.ts';
+// import { React } from '../deps.ts';
+import React from 'https://dev.jspm.io/react';
 
 const list = [
   'Banana', 'Apple', 'Strawberry'

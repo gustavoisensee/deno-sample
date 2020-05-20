@@ -10,7 +10,7 @@ listenAndServe({ port: 9000 }, async(req) => {
 		return respondHtml(req);
 	}
 
-	// Respond all the other type of files.
+	// // Respond all the other type of files.
 	return respondOtherFiles(req, contentType);
 });
 
